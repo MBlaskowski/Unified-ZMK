@@ -1,8 +1,13 @@
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <layouts/lily58>
+&kata0510_lily58_layout {
+    transform = <&default_transform>;
+};
 
 / {
     chosen {
         zmk,kscan = &mock_kscan;
+        zmk,physical-layout = kata0510_lily58_layout;
     };
    
     default_transform: keymap_transform_0 {
